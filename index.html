@@ -20,6 +20,7 @@
     />
 
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
 
     <title>Frontend Mentor | [Blogr]</title>
 
@@ -35,7 +36,7 @@
     </style>
   </head>
   <body>
-    <section class="hero">
+    <header class="hero">
       <div class="container-nav">
         <img class="logo" src="images/logo.svg" alt="blogr logo" />
         <img
@@ -43,6 +44,65 @@
           src="images/icon-hamburger.svg"
           alt="navigation icon"
         />
+        <nav class="mobile-nav hide">
+          <ul class="nav-list">
+            <li class="nav-product">
+              <p class="nav-p">
+                Product
+                <img
+                  data-item="product"
+                  class="nav-arrow"
+                  src="images/icon-arrow-dark.svg"
+                  alt="arrow down"
+                />
+              </p>
+              <ul class="product-mobile-nav popdown-ul hide">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Integrations</a></li>
+              </ul>
+            </li>
+            <li class="nav-company">
+              <p class="nav-p">
+                Company
+                <img
+                  data-item="company"
+                  class="nav-arrow"
+                  src="images/icon-arrow-dark.svg"
+                  alt="arrow down"
+                />
+              </p>
+              <ul class="company-mobile-nav popdown-ul hide">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </li>
+            <li class="nav-connect">
+              <p class="nav-p">
+                Connect
+                <img
+                  data-item="connect"
+                  class="nav-arrow"
+                  src="images/icon-arrow-dark.svg"
+                  alt="arrow down"
+                />
+              </p>
+              <ul class="connect-mobile-nav popdown-ul hide">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+              </ul>
+            </li>
+            <li class="nav-login"><a href="#">Login</a></li>
+            <li class="nav-sign-up">
+              <button class="sign-up" href="#">Sign Up</button>
+            </li>
+          </ul>
+        </nav>
       </div>
       <div class="hero-text">
         <h1 class="hero-h1">A modern publishing platform</h1>
@@ -50,7 +110,7 @@
         <button class="start-btn">Start For Free</button>
         <button class="learn-btn">Learn More</button>
       </div>
-    </section>
+    </header>
     Product Overview Pricing Marketplace Features Integrations Company About
     Team Blog Careers Connect Contact Newsletter LinkedIn Login Sign Up A modern
     publishing platform Grow your audience and build your online brand Start for
