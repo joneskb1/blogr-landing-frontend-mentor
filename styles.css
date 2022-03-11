@@ -1,0 +1,101 @@
+/* general */
+:root {
+  --CTA-text: hsl(356, 100%, 66%);
+  --CTA-hover-background: hsl(355, 100%, 74%);
+  --Headings: hsl(208, 49%, 24%);
+  --footer-text: hsl(240, 2%, 79%);
+  --body-copy: hsl(207, 13%, 34%);
+  --footer-background: hsl(240, 10%, 16%);
+  --nav-gradient: linear-gradient(
+    90deg,
+    rgba(255, 143, 112, 1) 25%,
+    rgba(255, 61, 84, 1) 75%
+  );
+  --background-gradient: linear-gradient(
+    90deg,
+    rgba(44, 45, 63, 1) 25%,
+    rgba(63, 65, 100, 1) 75%
+  );
+  --footer-font: font-family: "Ubuntu", sans-serif;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+button {
+    border: none;
+}
+
+body {
+  min-width: 375px;
+  font-size: 16px;
+  font-family: "Overpass", sans-serif;
+}
+
+/* hero */
+
+.hero {
+    min-height: 600px;
+    background: var(--nav-gradient);
+    color: white;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hamburger {
+ height: 18px;
+ align-self: center;
+}
+
+.hero-text {
+width: 327px;
+
+}
+
+.hero-h1 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 55px;
+}
+
+.hero-p {
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 28px;
+
+}
+
+
+.start-btn, .learn-btn {
+    padding: 1rem;
+    border-radius: 25px;
+    font-family: var(--footer-text);
+    font-weight: 700;
+    height: 48px;
+    width: 137px;
+}
+
+.start-btn {
+    color: var(--CTA-text);
+    background: white;
+    border: 2px solid white;
+    margin-right: 1rem;
+
+}
+
+.learn-btn {
+    color: white;
+    border: 2px solid white;
+    background: hsla(356, 100%, 66%, 0%)
+}
