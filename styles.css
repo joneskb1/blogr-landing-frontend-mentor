@@ -39,13 +39,12 @@ body {
 
 .hero {
     min-height: 600px;
-    background: var(--nav-gradient);
+    background: url("images/bg-pattern-intro-mobile.svg"), var(--nav-gradient);
+    background-repeat: no-repeat;
+    background-position: 33% 32.5%, 0px 0px;
     color: white;
     padding: 4rem 2rem;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-between;
+    border-bottom-left-radius: 125px;
 }
 
 .container-nav {
@@ -60,6 +59,8 @@ body {
 
 .hero-text {
 width: 327px;
+text-align: center;
+margin: 6rem auto;
 
 }
 
@@ -73,7 +74,7 @@ width: 327px;
     font-size: 1.125rem;
     font-weight: 300;
     line-height: 28px;
-
+    margin-bottom: 2rem;
 }
 
 
@@ -84,18 +85,18 @@ width: 327px;
     font-weight: 700;
     height: 48px;
     width: 137px;
+    border: 2px solid white;
+
 }
 
 .start-btn {
     color: var(--CTA-text);
     background: white;
-    border: 2px solid white;
     margin-right: 1rem;
 
 }
 
 .learn-btn {
     color: white;
-    border: 2px solid white;
     background: hsla(356, 100%, 66%, 0%)
 }
