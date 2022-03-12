@@ -2,11 +2,18 @@ const hamburger = document.querySelector(".hamburger");
 const mobileNav = document.querySelector(".mobile-nav");
 const navArrows = document.querySelectorAll(".nav-arrow");
 const navPopDown = document.querySelectorAll(".popdown-ul");
+const navP = document.querySelectorAll(".nav-p");
 
 // open nav popup
 hamburger.addEventListener("click", function (e) {
   hamburger.classList.toggle("hamburger-close");
   mobileNav.classList.toggle("hide");
+
+  // reset nav when closed
+  if (mobileNav.classList.contains("hide")) {
+    navPopDown.forEach((el) => el.classList.add("hide"));
+    navP.forEach((el) => el.classList.remove("nav-li-open"));
+  }
 });
 
 // show nav nested ul
