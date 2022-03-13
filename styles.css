@@ -1,3 +1,6 @@
+/* fix laptop image  */
+
+
 /* general */
 :root {
   --CTA-text: hsl(356, 100%, 66%);
@@ -228,6 +231,9 @@ li a, .nav-p {
 .design-future-img {
   text-align: center;
   width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
 }
 
 .main-text-container {
@@ -258,11 +264,11 @@ li a, .nav-p {
 .phone-img {
   position: absolute;
   top: -200px;
-  left:0;
+  left: 0;
   right: 0;
-  margin: 0 auto;
+  margin: 0 auto 2rem auto;
   width: 100%;
-  max-width: 500px;
+  max-width: 435px;
 }
 
 .phone-text-container {
@@ -286,18 +292,53 @@ li a, .nav-p {
 }
 
 
-
-.laptop-img-container {
-  background: url("images/illustration-laptop-mobile.svg");
-  background-repeat: no-repeat;
-  background-size: 135%;
-  background-position: center;
-  padding: 3rem .5rem;
-
+.laptop-img {
+background: url("images/illustration-laptop-mobile.svg");
+background-size: 135%;
+background-repeat: no-repeat;
+background-position: center;
+width: 100%;
+min-height: 400px;
+max-width: 500px;
+margin: 2rem auto 0 auto;
 }
 
-.laptop-img {
-visibility: hidden;
-max-width: 100vw;
-max-height: 100vh;
+.free-h2 {
+  margin: 0 auto;
+}
+
+
+/* footer  */
+.footer-container {
+  text-align: center;
+  padding: 3rem 0 3rem 0;
+  border-top-right-radius: 100px;
+  background-color: #24242C;
+  min-height: 900px;
+  font-family: var(--footer-font);
+  font-size: 1.125rem;
+}
+
+.footer-logo {
+  width: 101px;
+  height: 40px;
+  margin: 2rem auto 0 auto;
+}
+
+.category-footer {
+  padding: 2rem;
+}
+
+.footer-header {
+color: white;
+font-weight: 500;
+padding: 1rem;
+}
+
+.footer-link {
+  color: var(--footer-text);
+  display: block;
+  font-weight: 400;
+  padding: .25rem;
+
 }
