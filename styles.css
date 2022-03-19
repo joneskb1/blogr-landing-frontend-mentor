@@ -65,6 +65,7 @@ ul, li {
     color: white;
     padding: 4rem 1.5rem;
     border-bottom-left-radius: 125px;
+    position: relative;
 }
 
 .container-nav {
@@ -90,9 +91,14 @@ ul, li {
 .hero-text {
   min-width: 327px;
   text-align: center;
-  margin-top: 15vh;
-  margin-left: 0;
-  margin-right: 0;
+  /* margin-top: 15vh; */
+  /* margin-left: 0;
+  margin-right: 0; */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
 
 }
 
@@ -383,7 +389,7 @@ padding: 1rem;
 
   .hero-text {
     min-width: 500px;
-    margin-top: 20vh;
+    /* margin-top: 20vh; */
   }
 
   .hero-h1 {
@@ -527,7 +533,7 @@ padding: 1rem;
   
   .hero-text {
     max-width: 920px;
-    margin: 30vh auto;
+    /* margin: 30vh auto; */
    }
 
    .hero-h1 {
