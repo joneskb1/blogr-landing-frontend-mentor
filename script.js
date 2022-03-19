@@ -6,6 +6,7 @@ const navParaMobile = document.querySelectorAll(".nav-p");
 const navPopdownDesktop = document.querySelectorAll(".popdown-ul-desktop");
 const navDesktopCategory = document.querySelectorAll(".nav-desktop-category");
 const navDesktopArrow = document.querySelectorAll(".nav-desktop-arrow");
+const signUpBtn = document.querySelector(".sign-up");
 
 // open mobile nav popup
 hamburger.addEventListener("click", function (e) {
@@ -52,3 +53,7 @@ function showUlDesktop(e) {
 }
 
 navDesktopCategory.forEach((el) => el.addEventListener("click", showUlDesktop));
+
+signUpBtn.addEventListener("touchstart", function (e) {
+  e.currentTarget.classList.toggle("sign-up-active-mobile");
+});

@@ -770,3 +770,9 @@ padding: 1rem;
 .footer-link:active {
   text-decoration: underline;
 }
+
+.sign-up-active-mobile {
+  color: var(--CTA-hover-background);
+  background: white;
+  border: 5px solid var(--CTA-hover-background);
+}
