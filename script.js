@@ -1,5 +1,6 @@
 const hamburger = document.querySelector(".hamburger");
 const mobileNav = document.querySelector(".mobile-nav");
+const mobileParaImg = document.querySelectorAll(".mobile-nav-p-img-container");
 const navArrowsMobile = document.querySelectorAll(".nav-arrow");
 const navPopDownMobile = document.querySelectorAll(".popdown-ul");
 const navParaMobile = document.querySelectorAll(".nav-p");
@@ -23,20 +24,22 @@ hamburger.addEventListener("click", function (e) {
 
 // show mobile nav nested ul
 function showUlMobile(e) {
-  const item = e.target.dataset.item;
+  const item = e.currentTarget.dataset.item;
   const ul = [...navPopDownMobile].filter((el) =>
     el.classList.contains(`${item}-mobile-nav`)
   );
   ul[0].classList.toggle("hide");
 
   // change open li color
-  e.target.parentNode.classList.toggle("nav-li-open");
+  const para = e.currentTarget.querySelector("p");
+  para.classList.toggle("nav-li-open");
 
   // change arrow direction
-  e.target.classList.toggle("arrow-up");
+  const img = e.currentTarget.querySelector("img");
+  img.classList.toggle("arrow-up");
 }
 
-navArrowsMobile.forEach((el) => el.addEventListener("click", showUlMobile));
+mobileParaImg.forEach((el) => el.addEventListener("click", showUlMobile));
 
 // show desktop nested ul
 function showUlDesktop(e) {
