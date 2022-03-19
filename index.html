@@ -42,7 +42,10 @@
         <nav class="nav-desktop">
           <img class="logo-desktop" src="images/logo.svg" alt="blogr logo" />
           <ul class="nav-desktop-ul">
-            <li class="nav-desktop-product">
+            <li
+              class="nav-desktop-product nav-desktop-category"
+              data-item="product"
+            >
               <p class="nav-desktop-p">
                 Product
                 <img
@@ -53,14 +56,27 @@
                 />
               </p>
               <ul class="nav-desktop-product-ul popdown-ul-desktop hide">
-                <li><a href="#">Overview</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Marketplace</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Integrations</a></li>
+                <li>
+                  <a class="nav-desktop-popdown-link" href="#">Overview</a>
+                </li>
+                <li>
+                  <a class="nav-desktop-popdown-link" href="#">Pricing</a>
+                </li>
+                <li>
+                  <a class="nav-desktop-popdown-link" href="#">Marketplace</a>
+                </li>
+                <li>
+                  <a class="nav-desktop-popdown-link" href="#">Features</a>
+                </li>
+                <li>
+                  <a class="nav-desktop-popdown-link" href="#">Integrations</a>
+                </li>
               </ul>
             </li>
-            <li class="nav-desktop-company">
+            <li
+              class="nav-desktop-company nav-desktop-category"
+              data-item="company"
+            >
               <p class="nav-desktop-p">
                 Company
                 <img
@@ -71,13 +87,18 @@
                 />
               </p>
               <ul class="nav-desktop-company-ul popdown-ul-desktop hide">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Careers</a></li>
+                <li><a class="nav-desktop-popdown-link" href="#">About</a></li>
+                <li><a class="nav-desktop-popdown-link" href="#">Team</a></li>
+                <li><a class="nav-desktop-popdown-link" href="#">Blog</a></li>
+                <li>
+                  <a class="nav-desktop-popdown-link" href="#">Careers</a>
+                </li>
               </ul>
             </li>
-            <li class="nav-desktop-connect">
+            <li
+              class="nav-desktop-connect nav-desktop-category"
+              data-item="connect"
+            >
               <p class="nav-desktop-p">
                 Connect
                 <img
@@ -88,9 +109,15 @@
                 />
               </p>
               <ul class="nav-desktop-connect-ul popdown-ul-desktop hide">
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Newsletter</a></li>
-                <li><a href="#">LinkedIn</a></li>
+                <li>
+                  <a class="nav-desktop-popdown-link" href="#">Contact</a>
+                </li>
+                <li>
+                  <a class="nav-desktop-popdown-link" href="#">Newsletter</a>
+                </li>
+                <li>
+                  <a class="nav-desktop-popdown-link" href="#">LinkedIn</a>
+                </li>
               </ul>
             </li>
           </ul>

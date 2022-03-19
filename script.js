@@ -1,25 +1,29 @@
 const hamburger = document.querySelector(".hamburger");
 const mobileNav = document.querySelector(".mobile-nav");
-const navArrows = document.querySelectorAll(".nav-arrow");
-const navPopDown = document.querySelectorAll(".popdown-ul");
-const navP = document.querySelectorAll(".nav-p");
+const navArrowsMobile = document.querySelectorAll(".nav-arrow");
+const navPopDownMobile = document.querySelectorAll(".popdown-ul");
+const navParaMobile = document.querySelectorAll(".nav-p");
+const navPopdownDesktop = document.querySelectorAll(".popdown-ul-desktop");
+const navDesktopCategory = document.querySelectorAll(".nav-desktop-category");
+const navDesktopArrow = document.querySelectorAll(".nav-desktop-arrow");
 
-// open nav popup
+// open mobile nav popup
 hamburger.addEventListener("click", function (e) {
   hamburger.classList.toggle("hamburger-close");
   mobileNav.classList.toggle("hide");
 
-  // reset nav when closed
+  // reset mobile nav when closed
   if (mobileNav.classList.contains("hide")) {
-    navPopDown.forEach((el) => el.classList.add("hide"));
-    navP.forEach((el) => el.classList.remove("nav-li-open"));
+    navPopDownMobile.forEach((el) => el.classList.add("hide"));
+    navParaMobile.forEach((el) => el.classList.remove("nav-li-open"));
+    navArrowsMobile.forEach((el) => el.classList.remove("arrow-up"));
   }
 });
 
-// show nav nested ul
-function showUl(e) {
+// show mobile nav nested ul
+function showUlMobile(e) {
   const item = e.target.dataset.item;
-  const ul = [...navPopDown].filter((el) =>
+  const ul = [...navPopDownMobile].filter((el) =>
     el.classList.contains(`${item}-mobile-nav`)
   );
   ul[0].classList.toggle("hide");
@@ -27,10 +31,24 @@ function showUl(e) {
   // change open li color
   e.target.parentNode.classList.toggle("nav-li-open");
 
-  console.log(e.target.parentNode.classList);
-
   // change arrow direction
   e.target.classList.toggle("arrow-up");
 }
 
-navArrows.forEach((el) => el.addEventListener("click", showUl));
+navArrowsMobile.forEach((el) => el.addEventListener("click", showUlMobile));
+
+// show desktop nested ul
+function showUlDesktop(e) {
+  const category = e.currentTarget.dataset.item;
+  const popdownUl = [...navPopdownDesktop].filter((el) => {
+    return el.classList.contains(`nav-desktop-${category}-ul`);
+  });
+  popdownUl[0].classList.toggle("hide");
+  // change category color/underline
+  e.currentTarget.classList.toggle("nav-desktop-p-active");
+  // change arrow direction & color
+  const arrow = e.currentTarget.querySelector(".nav-desktop-arrow");
+  arrow.classList.toggle("nav-desktop-arrow-active");
+}
+
+navDesktopCategory.forEach((el) => el.addEventListener("click", showUlDesktop));
