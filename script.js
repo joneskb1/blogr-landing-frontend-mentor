@@ -7,7 +7,7 @@ const navPopdownDesktop = document.querySelectorAll(".popdown-ul-desktop");
 const navDesktopCategory = document.querySelectorAll(".nav-desktop-category");
 const navDesktopArrow = document.querySelectorAll(".nav-desktop-arrow");
 const mobileBtns = document.querySelectorAll(".mobile-btn");
-
+const mobileLinks = document.querySelectorAll(".mobile-link");
 // open mobile nav popup
 hamburger.addEventListener("click", function (e) {
   hamburger.classList.toggle("hamburger-close");
@@ -54,7 +54,7 @@ function showUlDesktop(e) {
 
 navDesktopCategory.forEach((el) => el.addEventListener("click", showUlDesktop));
 
-// touch events mobile
+// touch btns mobile
 function addActiveBtns(e) {
   const btn = e.currentTarget.dataset.btn;
   e.currentTarget.classList.add(`${btn}-active`);
@@ -66,3 +66,14 @@ function removeActiveBtns(e) {
 
 mobileBtns.forEach((el) => el.addEventListener("touchstart", addActiveBtns));
 mobileBtns.forEach((el) => el.addEventListener("touchend", removeActiveBtns));
+
+//  touch links mobile
+function addActiveLink(e) {
+  e.currentTarget.classList.add("link-active");
+}
+
+function removeActiveLink(e) {
+  e.currentTarget.classList.remove("link-active");
+}
+mobileLinks.forEach((el) => el.addEventListener("touchstart", addActiveLink));
+mobileLinks.forEach((el) => el.addEventListener("touchend", removeActiveLink));

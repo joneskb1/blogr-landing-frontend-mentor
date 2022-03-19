@@ -1,4 +1,4 @@
-/*  JS touch 
+
 
 
 /* general */
@@ -748,9 +748,6 @@ padding: 1rem;
 }
 
 /* touch event classes */
-.nav-desktop-popdown-link-active {
-  font-weight: 700;
-}
 .start-btn-active {
   background-color: var(--CTA-hover-background);
   color: white;
@@ -760,17 +757,14 @@ padding: 1rem;
   background: white;
 }
 
-.nav-login-active {
-  text-decoration: underline;
-}
-
 .sign-up-btn-active {
   color: var(--CTA-hover-background);
   background: white;
   border: 5px solid var(--CTA-hover-background);
 }
 
-.footer-link-active {
+.link-active {
   text-decoration: underline;
 }
+
 
