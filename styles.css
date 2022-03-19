@@ -529,7 +529,7 @@ padding: 1rem;
   
   .hero-text {
     max-width: 920px;
-    margin: 20vh auto;
+    margin: 30vh auto;
    }
 
    .hero-h1 {
@@ -540,9 +540,8 @@ padding: 1rem;
    /* design future */
    .design-future-container {
      display: grid;
-     grid-template-rows: 100px 160px 250px 375px;
+     grid-template-rows: 100px 160px 250px 250px 200px;
      grid-template-columns: 60% 40%;
-
    }
 
    .design-future-img {
@@ -558,8 +557,7 @@ padding: 1rem;
    .editor, .content {
     grid-row: 3 / 4;
     grid-column: 1 / 2;
-    margin: 0;
-    margin-left: 3rem;
+    margin: 0 auto;
     text-align: left;
     align-self: start;
    }
@@ -582,8 +580,7 @@ padding: 1rem;
     text-align: left;
     margin: 0;
     padding: 0;
-    max-width: 540px;
-
+    min-width: 450px;
    }
 
    .editor-h2, .content-h2 {
@@ -596,7 +593,7 @@ padding: 1rem;
      min-height: initial;
      height: 400px;
      padding: 0;
-     margin: 0;
+     margin: 5rem 0 8rem 0;
      background-position: -90% 85%, center;
      background-size: 80%, 100%;
    }
@@ -619,13 +616,82 @@ padding: 1rem;
      padding: 0;
      margin: 0;
    }
+
+   /* laptop */
+   .laptop-img-text-container {
+    display: grid;
+    grid-template-rows: 200px 250px 250px 200px;
+    grid-template-columns: 40% 60%;
+   }
+
+   .laptop-img{
+    grid-row: 1 / -1;
+    grid-column: 1 / 2;
+    background: url("images/illustration-laptop-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    max-width: 100%; 
+    min-height: 100%;
+    margin-top: -15%;
+   }
+
+   .free-p, .tool-p, .free-h2, .tool-h2 {
+    padding: 0;
+    text-align: left;
+    margin: 0;
+    min-width: 450px;
+   }
+   
+   .free-h2, .tool-h2 {
+     padding-bottom: 1rem;
+   }
+
+   .laptop-text-free {
+     grid-row: 2 / 3;
+     grid-column: 2/3;
+     margin: 0 auto;
+
+   }
+
+   .laptop-text-tool {
+    grid-row: 3 / 4;
+    grid-column: 2/3;
+    margin: 0 auto; 
+    align-self: center;
+
+   }
+
+
+   /* footer */
+   .footer-container {
+     margin: 0;
+     padding: 5rem;
+     min-height: 359px;
+     justify-content: space-around;
+   }
+   .footer-logo {
+     margin: 0;
+     padding: 0;
+   }
+   .category-footer {
+     padding-top: 0;
+     font-size: .9375rem;
+   }
+   .footer-header {
+     padding: .5rem 0 1rem 0;
+   }
+   .footer-link {
+     padding: .5rem;
+   }
 }
 
 
 @media (min-width: 1300px) {
 
-  .editor, .content {
-    margin-left: 10rem;
+
+  .editor-h2, .content-h2, .editor-p, .content-p,
+  .free-p, .tool-p, .free-h2, .tool-h2 {
+    min-width: 540px;
   }
 
    .phone-text-container {
@@ -639,6 +705,8 @@ padding: 1rem;
     margin: 0;
     padding: 0;
   }
+
+
 }
 
 
