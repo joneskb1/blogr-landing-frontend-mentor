@@ -1,4 +1,4 @@
-/*  JS touch, landscape fix */
+/*  JS touch 
 
 
 /* general */
@@ -96,6 +96,8 @@ ul, li {
   transform: translateY(-50%);
   left: 0;
   right: 0;
+  margin: 0 auto;
+  padding: 0 1.5rem 0 1.5rem;
 
 }
 
@@ -206,7 +208,7 @@ li a, .nav-p {
   padding-top: 1rem;
 }
 
-.sign-up {
+.sign-up-btn {
   background: var(--nav-gradient);
   color: white;
   width: 137px;
@@ -360,10 +362,7 @@ padding: 1rem;
 @media (min-width: 389px ) {
 
   .hero-text {
-   max-width: 300px;
-   margin-left: auto;
-   margin-right: auto;
-
+  padding: 0 2rem 0 2rem;
   }
 
   .phone-h2 {
@@ -377,6 +376,7 @@ padding: 1rem;
 }
 
 @media (min-width: 500px) {
+  
   .phone-p {
   padding: 0 2.5rem 0 2.5rem;
   }
@@ -737,7 +737,7 @@ padding: 1rem;
     text-decoration: underline;
   }
   
-  .sign-up:hover,  .sign-up:active {
+  .sign-up-btn:hover,  .sign-up-btn:active {
     color: var(--CTA-hover-background);
     background: white;
     border: 5px solid var(--CTA-hover-background);
@@ -764,7 +764,7 @@ padding: 1rem;
   text-decoration: underline;
 }
 
-.sign-up-active {
+.sign-up-btn-active {
   color: var(--CTA-hover-background);
   background: white;
   border: 5px solid var(--CTA-hover-background);
