@@ -353,8 +353,19 @@ padding: 1rem;
 }
 
 
+/* landscape mobile */
+@media (min-width: 600px) and (min-height: 375px) {
+  body{
+    width: 100%;
+    min-width: initial;
+  }
+  .hero-text {
+    min-width: 500px;
+    margin-top: 15vh;
+  }
+}
 
-
+/* desktops */
 @media (min-width: 389px ) {
 
   .hero-text {
@@ -381,7 +392,7 @@ padding: 1rem;
 }
 
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (min-height: 500px) {
 
   .hero-text {
     min-width: 500px;
@@ -688,7 +699,6 @@ padding: 1rem;
 
 @media (min-width: 1300px) {
 
-
   .editor-h2, .content-h2, .editor-p, .content-p,
   .free-p, .tool-p, .free-h2, .tool-h2 {
     min-width: 540px;
@@ -714,65 +724,64 @@ padding: 1rem;
 
 /* hover/active states */
 @media (hover: hover) and (pointer: fine) {
-  .nav-desktop-popdown-link:hover {
+  .nav-desktop-popdown-link:hover,
+  .nav-desktop-popdown-link:active {
     font-weight: 700;
 
   }
-  .nav-desktop-p:hover, .nav-desktop-login:hover{
+  .nav-desktop-p:hover, .nav-desktop-login:hover,
+  .nav-desktop-p:active, .nav-desktop-login:active{
     font-weight: 700;
     color: rgba(255,255,255, 1);
     text-decoration: underline;
   }
-  .nav-desktop-signup:hover, .start-btn:hover {
+  .nav-desktop-signup:hover, .start-btn:hover,
+  .nav-desktop-signup:active, .start-btn:active  {
     background-color: var(--CTA-hover-background);
     color: white;
   }
-  .learn-btn:hover {
+  .learn-btn:hover,  .learn-btn:active {
     color:var(--CTA-hover-background);
     background: white;
   }
-  .nav-login:hover {
+  .nav-login:hover, .nav-login:active {
     text-decoration: underline;
   }
   
-  .sign-up:hover {
+  .sign-up:hover,  .sign-up:active {
     color: var(--CTA-hover-background);
     background: white;
     border: 5px solid var(--CTA-hover-background);
   }
-  .footer-link:hover {
+  .footer-link:hover,   .footer-link:active {
     text-decoration: underline;
   }
 }
 
-.nav-desktop-popdown-link:active {
+/* touch event classes */
+.nav-desktop-popdown-link-active {
   font-weight: 700;
 }
-.nav-desktop-signup:active, .start-btn:active {
+.start-btn-active {
   background-color: var(--CTA-hover-background);
   color: white;
 }
- .learn-btn:active {
+ .learn-btn-active {
   color:var(--CTA-hover-background);
   background: white;
 }
 
-.nav-login:active {
+.nav-login-active {
   text-decoration: underline;
 }
 
-.sign-up:active {
+.sign-up-active {
   color: var(--CTA-hover-background);
   background: white;
   border: 5px solid var(--CTA-hover-background);
 }
 
-.footer-link:active {
+.footer-link-active {
   text-decoration: underline;
 }
 
-.sign-up-active-mobile {
-  color: var(--CTA-hover-background);
-  background: white;
-  border: 5px solid var(--CTA-hover-background);
-}
