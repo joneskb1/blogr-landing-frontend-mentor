@@ -54,6 +54,6 @@ function showUlDesktop(e) {
 
 navDesktopCategory.forEach((el) => el.addEventListener("click", showUlDesktop));
 
-signUpBtn.addEventListener("touchstart", function (e) {
-  e.currentTarget.classList.toggle("sign-up-active-mobile");
-});
+// signUpBtn.addEventListener("touchstart", function (e) {
+//   e.currentTarget.classList.toggle("sign-up-active-mobile");
+// });
